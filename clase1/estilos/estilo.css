@@ -1,0 +1,115 @@
+
+html, body, iframe, h1, h2, h3, ol, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Arial;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+/* definir los estilos de la cabecera */
+header {
+    background-color: #23384e;
+    padding-top: 15px;
+    padding-left: 50px;
+}
+.controlBuscar {
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 40%;
+}
+
+/* Estilos menu principal */
+nav {
+    height: 45px;
+    background-color: #dbdada;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid grey;
+}
+nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #a09f9f;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-size: 20px;
+}
+
+/* aside */
+
+aside {
+    float: left;
+    width: 20%;
+    height: 750px;
+    background-color: #dbdada;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+aside ul li {
+    font-size: 20px;
+    display: list-item;
+    list-style: none;
+    padding-top: 5px;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: #a09f9f;
+    text-transform: lowercase;
+}
+
+aside ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+aside h2 {
+    color: #a09f9f;
+    border-bottom: 8px solid green;
+}
+
+/* estilos del iframe */
+iframe {
+    width: 70%;
+    border: 0;
+    height: 750px;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+}
+
+/* Estilos del footer */
+
+footer {
+    height: 40px;
+    background-color: #23384e;
+    margin-top: 10px;
+    padding-top: 13px;
+    font-size: 15px;
+    color: white;
+}
