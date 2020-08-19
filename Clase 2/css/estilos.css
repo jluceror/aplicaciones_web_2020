@@ -1,0 +1,106 @@
+ /* Estilos de neutralidad */
+
+ html, body, h1, h2, h3, h4, h5, h6, ol, ul, li, a, p, div {
+     margin: 0;
+     padding: 0;
+     font-family: Calibri, Arial;
+ }
+
+ body {
+     background-color: #ffffff;
+ }
+
+/* Estilos del Header */
+.espacioHeader {
+    padding-left: 105px;
+}
+
+header {
+    background-color: #002C48;
+    height: 42px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+header a {
+    background-color: tomato;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos Nav1 */
+
+.espacioEnlace1 {
+    padding-left: 450px;
+}
+.espacioLogo {
+    padding-top: 5px;
+    padding-left: 105px;
+    float: left;
+}
+
+#nav1 {
+    height: 65px;
+    background-color: white;
+}
+
+#nav1 a {
+    text-decoration: none;
+    font-size: 26px;
+    color: #0061A0;
+    text-align: center;
+    padding-right: 50px;
+}
+#nav1 ul {
+    float: left;
+    padding-top: 15px;
+}
+
+#nav1 ul li {
+    display: inline;
+}
+
+#nav1 ul li a:hover {
+    background-color: #ffffff;
+    color: #eb510d;
+}
+
+/* Estilos contenedor 2 y sus divs */
+
+#contenedor2 {
+    float: left;
+    margin-top: 10px;
+}
+
+#contenedor2 h2 {
+    color: white;
+}
+
+.caja13 {
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    background-color: #0061a0;
+    float: left;
+    box-shadow: 2px 2px;
+}
+
+#contenedor2 img {
+    width: 100%;
+}
+
+#contenedor2 ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+#contenedor2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
