@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Lnorambuena" />
+    <meta name="keywords" content="contacto my sweet pet" />
+    <meta name="description" content="My sweet pet" /> 
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="./estilos/estilo.css">
+</head>
+<body>
+    <nav>
+        <ul id="mi_menu">
+        </ul>
+    </nav>
+        <div id="contenedor">
+            <center><h1>Registro de mascotas</h1></center>
+            <form>
+                <table border="0" align="center" width="500" class="tablaContactenos">
+                    <tr>
+                        <td>
+                            <label style="margin-bottom: 15px;">Nombre:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="txtnom" name="txtnom" maxlength="50" class="controles">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="margin-bottom: 15px;">Edad:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="txtedad" name="txtedad"  class="controles">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tipo:</td>
+                        <td>
+                            <select id="cboTipo" class="controles">
+                                <option value="">Seleccione un tipo</option>
+                                <option value="perro">Perro</option>
+                                <option value="gato">Gato</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td>
+                            <input type="radio" id="txtnom" name="opsex" value="Macho" checked /> Macho
+                            <input type="radio" id="txtnom" name="opsex" value="Hembra" /> Hembra
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Observación:</td>
+                        <td>
+                            <textarea  name="txtObservacion" id="" cols="30" rows="10" class="controles"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="botonesFormulario">
+                            <input type="submit" id="btnenv" name="btnenv" value="Enviar" class="botones"/> 
+                        <input type="reset" id="btnres" name="btnres" value="Restablecer" class="botones"/> 
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

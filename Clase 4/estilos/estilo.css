@@ -1,0 +1,125 @@
+/* estilos de neutralidad */
+
+html, body, ul, li, a, iframe {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Arial;
+}
+
+body {
+    background-color: #bcd5b0;
+}
+
+/* index.html */
+
+header {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+
+}
+
+iframe {
+    width: 75%;
+    height: 480px;
+    border: 0;
+    margin-top: 8px;
+}
+
+.fotofondo {
+    border-radius: 50px;
+    border: 2px solid;
+}
+
+/* Menú */
+
+nav {
+    height: 35px;
+    background-color: black;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+ul li {
+    font-size: 18px;
+    display: inline;
+    margin-left: 10px;
+}
+
+/* perritos y gatitos */
+
+.cajasGaleria {
+    background-color: #85c687;
+    width: 285px;
+    height: 195px;
+    margin: 5px;
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px gray;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.foto {
+    width: 120px;
+    height: 115px;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* contacto */
+
+#botonesFormulario {
+    text-align: center;
+}
+
+.tablaContactenos {
+    background-color: #85c687;
+    font-size: 24px;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.controles {
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.botones {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.botones:hover{
+    background-color: teal;
+    color: violet;
+    cursor: pointer;
+}
