@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Vehiculos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Registro de Vehiculo</div>
+                    <div class="card-body">
+                        <form action="#" id="formVehiculo">
+                            <div class="form-group">
+                                <label for="txtPatente">Patente</label>
+                                <input type="text" id="txtPatente" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cboMarca">Marca</label>
+                                <select type="text" id="cboMarca" class="form-control">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtAno">Año</label>
+                                <input type="number" id="txtAno" class="form-control" />
+                            </div>
+                            <button type="button" id="btnGuardar" class="btn btn-primary">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Vehiculos Registrados</div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Patente</th>
+                                    <th>Marca</th>
+                                    <th>Año</th>
+                                    <th>Opciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="listaVehiculos">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vehiculo.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

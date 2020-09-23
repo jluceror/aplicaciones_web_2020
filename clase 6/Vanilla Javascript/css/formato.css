@@ -1,0 +1,22 @@
+#contenedor-img {
+    border: 2px solid;
+    padding: 20px;
+}
+
+.img-thumbnail{
+    height: 150px;
+    width: 100%;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.imagen-ampliada {
+    text-align:center;
+    margin:auto;
+}
+
+.imagen-ampliada img {
+    width: 95%;
+}
