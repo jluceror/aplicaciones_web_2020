@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Matricula</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Registro de Matricula</div>
+                    <div class="card-body">
+                        <form action="#" id="form-matricula">
+                            <div class="form-group">
+                                <label for="txt-rut">RUT:</label>
+                                <input type="text" id="txt-rut" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="txt-nombre">NOMBRE:</label>
+                                <input type="text" id="txt-nombre" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="">Sexo:</label>
+                                <input type="radio" class="op-sex" name="op-sex" value="Masculino"/> Masculino
+                                <input type="radio" class="op-sex" name="op-sex" value="Femenino" /> Femenino
+                            </div>
+                            <div class="form-group">
+                                <label for="txt-fnacimiento">FECHA NACIMIENTO:</label>
+                                <input type="date" id="txt-fnacimiento" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cbo-carrera">CARRERA:</label>
+                                <select name="cbo-carrera" id="cbo-carrera" class="form-control">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="Ing en informática">Ing en informática</option>
+                                    <option value="Ciber seguridad">Ciber seguridad</option>
+                                    <option value="Redes">Redes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="txt-prom">PROM. MEDIA:</label>
+                                <input type="number" id="txt-prom" class="form-control" />
+                            </div>
+                            <div style="text-align: center;">
+                                <button type="button" id="btn-registrar" class="btn btn-success">Registrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Mostrar Registro de Matricula</div>
+                    <div class="card-body">
+                        <table class="table" id="tabla-resultado">
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

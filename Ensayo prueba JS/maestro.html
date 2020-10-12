@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensayo prueba - Maestro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Mestro Productos</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label for="">código</label>
+                                    <input type="text" id="txt-cod" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2" style="margin-top:28px">
+                                <button class="btn btn-secondary"> Buscar</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="txt-nombre">NOMBRE</label>
+                                    <input type="text" id="txt-nombre" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="cbo-categoria">CATEGORÍA</label>
+                                    <select id="cbo-categoria" class="form-control">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="txt-precio">PRECIO</label>
+                                    <input type="text" id="txt-precio" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="txt-cantidad">CANTIDAD</label>
+                                    <input type="text" id="txt-cantidad" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txt-total">TOTAL</label>
+                                    <input type="text" disabled class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-success" id="btn-registrar">REGISTRAR</button>
+                                <button class="btn btn-primary" id="btn-modificar">MODIFICAR</button>
+                                <button class="btn btn-danger" id="btn-eliminar">ELIMINAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Listado de Productos</div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-stripped">
+                            <thead>
+                                <tr style="background-color: darkgray;">
+                                    <th>Categoría</th>
+                                    <th>Código</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="row">
+                            <div style="margin: auto;">
+                                <button id="btn-eliminar-todo" class="btn btn-warning">Eliminar Todo</button>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <span style="font-weight: bold;">CANTIDAD:</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span style="font-weight: bold;">SUMA TOTALES:</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/maestro.js"></script>
+</body>
+</html>

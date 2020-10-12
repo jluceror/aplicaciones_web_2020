@@ -32,6 +32,8 @@ $(document).ready( function () {
             vehiculos.push(vehiculo);
             limpiarFormulario();
             dibujarVehiculos();
+        } else {
+            alert('Complete toda la información solicitada.')
         }
     });
 
