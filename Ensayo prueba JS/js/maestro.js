@@ -1,4 +1,10 @@
 $(function() {
+    let usuarioConectado = localStorage.getItem('UsuarioConectado');
+    if (!usuarioConectado) location.replace('index.html');
+    usuarioConectado = JSON.parse(usuarioConectado);
+    $('#texto-bienvenida').text(`Bienvenido ${usuarioConectado.nombre}`);
+    console.log(usuarioConectado);
+
     var categorias = [
         new Categoria('Procesadores', 'img/procesadores.png'),
         new Categoria('Memorias computador', 'img/ram.svg'), 
