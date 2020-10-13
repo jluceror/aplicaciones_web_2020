@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2" style="margin-top:28px">
-                                <button class="btn btn-secondary"> Buscar</button>
+                                <button class="btn btn-secondary" id="btn-buscar"> Buscar</button>
                             </div>
                         </div>
                         <div class="row">
@@ -60,15 +60,15 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="txt-total">TOTAL</label>
-                                    <input type="text" disabled class="form-control">
+                                    <input type="text" id="txt-total" disabled class="form-control">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <button class="btn btn-success" id="btn-registrar">REGISTRAR</button>
-                                <button class="btn btn-primary" id="btn-modificar">MODIFICAR</button>
-                                <button class="btn btn-danger" id="btn-eliminar">ELIMINAR</button>
+                                <button class="btn btn-primary" disabled='disabled' id="btn-modificar">MODIFICAR</button>
+                                <button class="btn btn-danger" disabled='disabled' id="btn-eliminar">ELIMINAR</button>
                             </div>
                         </div>
                     </div>
@@ -89,6 +89,9 @@
                                     <th>Total</th>
                                 </tr>
                             </thead>
+                            <tbody id="productos">
+
+                            </tbody>
                         </table>
                         <div class="row">
                             <div style="margin: auto;">
@@ -97,10 +100,10 @@
                         </div>
                         <div class="row mt-5">
                             <div class="col-md-6">
-                                <span style="font-weight: bold;">CANTIDAD:</span>
+                                <span id="cantidad-productos" style="font-weight: bold;">CANTIDAD:</span>
                             </div>
                             <div class="col-md-6">
-                                <span style="font-weight: bold;">SUMA TOTALES:</span>
+                                <span id="total-productos" style="font-weight: bold;">SUMA TOTALES:</span>
                             </div>
                         </div>
                     </div>
