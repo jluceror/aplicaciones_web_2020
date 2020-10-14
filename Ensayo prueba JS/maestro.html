@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        <h1 id="mensaje-bienvenida"></h1>
         <div class="row mt-5">
             <div class="col-md-6">
                 <div class="card">
@@ -21,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2" style="margin-top:28px">
-                                <button class="btn btn-secondary"> Buscar</button>
+                                <button class="btn btn-secondary" id="btn-buscar"> Buscar</button>
                             </div>
                         </div>
                         <div class="row">
@@ -57,15 +58,15 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="txt-total">TOTAL</label>
-                                    <input type="text" disabled class="form-control">
+                                    <input id="txt-total" type="text" disabled class="form-control">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <button class="btn btn-success" id="btn-registrar">REGISTRAR</button>
-                                <button class="btn btn-primary" id="btn-modificar">MODIFICAR</button>
-                                <button class="btn btn-danger" id="btn-eliminar">ELIMINAR</button>
+                                <button class="btn btn-primary" disabled='true' id="btn-modificar">MODIFICAR</button>
+                                <button class="btn btn-danger" disabled='true' id="btn-eliminar">ELIMINAR</button>
                             </div>
                         </div>
                     </div>
@@ -74,7 +75,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">Listado de Productos</div>
-                    <div class="card-body">
+                    <div class="table-responsive">
                         <table class="table table-bordered table-stripped">
                             <thead>
                                 <tr style="background-color: darkgray;">
@@ -86,6 +87,9 @@
                                     <th>Total</th>
                                 </tr>
                             </thead>
+                            <tbody id="lista-productos">
+
+                            </tbody>
                         </table>
                         <div class="row">
                             <div style="margin: auto;">
@@ -94,10 +98,10 @@
                         </div>
                         <div class="row mt-5">
                             <div class="col-md-6">
-                                <span style="font-weight: bold;">CANTIDAD:</span>
+                                <span id="cantidad-productos" style="font-weight: bold;">CANTIDAD:</span>
                             </div>
                             <div class="col-md-6">
-                                <span style="font-weight: bold;">SUMA TOTALES:</span>
+                                <span id="total-productos" style="font-weight: bold;">SUMA TOTALES:</span>
                             </div>
                         </div>
                     </div>
